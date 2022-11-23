@@ -22,8 +22,8 @@
                         <p><a href="{% url 'logout' %}">Выйти из акка</a></p>
                     {% else %}
                         <p>Вы не авторизованы:(</p>
-                        <a href="{% url 'login' %}">Авторизоваться</a>
-                        <p><a href="http://127.0.0.1:8000/accounts/signup/">Зарегистрироваться</a></p>
+                        <a href="https://zymkazhz.pythonanywhere.com/accounts/signup/">Авторизоваться</a>
+                        <p><a href="{% url 'signup'">Зарегистрироваться</a></p>
                     {% endif %}
                 {% block content %}
                 {% endblock %}
